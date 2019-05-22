@@ -7,15 +7,14 @@
 
 import scrapy
 
-
 class UrlItem(scrapy.Item):
-    # define the fields for your item here like:
 	title = scrapy.Field()
 	url = scrapy.Field()
 
 class ContentItem(scrapy.Item):
     # define the fields for your item here like:
 	title = scrapy.Field()
+	resource = scrapy.Field() # "ROC", "Bank", "Inter"
 	url = scrapy.Field()
 	time = scrapy.Field()
 	content = scrapy.Field()
